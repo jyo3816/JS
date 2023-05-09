@@ -1,0 +1,26 @@
+syn and Asyn programming in js
+
+success=resolve
+failure=reject
+
+#creating obj
+
+const prm new promise(function(resolve,reject){
+console.log("fetching the data from db");
+setTimeout(()=>{
+reject("Failed to get data")
+},3000) //timimg //states of promise=pending,filfilled,reject
+})
+
+//success //then will accept call back function
+prm.then(function(result){
+console.log("in the method")
+console.log(result)
+
+//reject
+prem.catch(function(err)){
+console.log("in catch method")
+console.log(err);
+})
+
+js obj donation(jsod)
